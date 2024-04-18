@@ -1,24 +1,24 @@
-# YOOJ 项目代码贡献流程
+# yooj-backend 项目代码贡献流程
 
-YOOJ 项目采用 Github Fork 工作流。
+yooj-backend 项目采用 Github Fork 工作流。
 
 Github Forking 工作流详细步骤如下：
 
 1. Fork 远程仓库到自己的账号下
 
-   访问 https://github.com/yngcy/yooj ，点击 Fork 按钮，fork 后的仓库地址为：https://github.com/examplefork/yooj 。
+   访问 https://github.com/yngcy/yooj-backend ，点击 Fork 按钮，fork 后的仓库地址为：https://github.com/examplefork/yooj-backend 。
 2. 克隆 fork 的仓库到本地
 
    ```bash
-   $ git clone https://gihub.com/example/yooj
-   $ cd yooj
-   $ git remote add upstream https://github.com/yngcy/yooj
+   $ git clone https://gihub.com/example/yooj-backend
+   $ cd yooj-backend
+   $ git remote add upstream https://github.com/yngcy/yooj-backend
    $ git remote set-url --push upstream no_push # Never pu to upstream master
    $ git remote -v # Confirm that your remotes make sense
-   origin https://github.com/examplefork/yooj (fetch)
-   origin https://github.com/examplefork/yooj (push)
-   upstream     https://github.com/yngcg/yooj (fetch)
-   upstream     https://github.com/yngcy/yooj (push)
+   origin https://github.com/examplefork/yooj-backend (fetch)
+   origin https://github.com/examplefork/yooj-backend (push)
+   upstream     https://github.com/yngcg/yooj-backend (fetch)
+   upstream     https://github.com/yngcy/yooj-backend (push)
    ```
 3. 创建功能分支
 
@@ -174,4 +174,4 @@ Github Forking 工作流详细步骤如下：
 
 7. 在个人远程仓库页面创建 pull request
    
-   提交远程仓库以后，就可以发出 pull request 到 master 分支，后面由 YOOJ 项目的 Maintainer 进行 Review，并 Merge 到主干代码。
+   提交远程仓库以后，就可以发出 pull request 到 master 分支，后面由 yooj-backend 项目的 Maintainer 进行 Review，并 Merge 到主干代码。
