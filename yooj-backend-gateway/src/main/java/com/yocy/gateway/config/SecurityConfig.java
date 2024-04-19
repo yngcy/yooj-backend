@@ -2,6 +2,7 @@ package com.yocy.gateway.config;
 
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.convert.Convert;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,7 @@ public class SecurityConfig {
     /**
      * 黑名单请求路径列表
      */
+    @Setter
     private List<String> blacklistPaths;
 
     @Bean
