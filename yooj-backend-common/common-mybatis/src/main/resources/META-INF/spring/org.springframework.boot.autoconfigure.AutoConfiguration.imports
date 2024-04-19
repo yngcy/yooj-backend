@@ -1,0 +1,2 @@
+com.yocy.common.mybatis.config.MybatisPlusConfig
+com.yocy.common.mybatis.handler.MyMetaObjectHandler
