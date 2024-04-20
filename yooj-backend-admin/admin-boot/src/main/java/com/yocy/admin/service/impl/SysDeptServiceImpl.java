@@ -14,7 +14,6 @@ import com.yocy.admin.service.SysDeptService;
 import com.yocy.common.constant.SystemConstants;
 import com.yocy.common.enums.StatusEnum;
 import com.yocy.common.web.model.Option;
-import kotlin.jvm.internal.Lambda;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -145,7 +144,7 @@ public class SysDeptServiceImpl extends ServiceImpl<SysDeptMapper, SysDept>
                 this.remove(new LambdaQueryWrapper<SysDept>()
                         .eq(SysDept::getId, deptId)
                         .or()
-                        .apply("CONCAT (',',tree_path,',') LIKE CONCAT ('%,',{0},',%')", deptIds);
+                        .apply("CONCAT (',',tree_path,',') LIKE CONCAT ('%,',{0},',%')", deptIds));
             }
         }
         return true;
