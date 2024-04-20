@@ -16,6 +16,11 @@
         <module>common-core</module>
         <module>common-mybatis</module>
         <module>common-redis</module>
+        <module>common-rabbitmq</module>
+        <module>common-apidoc</module>
+        <module>common-sms</module>
+        <module>common-security</module>
+        <module>common-web</module>
     </modules>
 
     <properties>
