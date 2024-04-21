@@ -10,4 +10,10 @@ import com.yocy.admin.model.entity.SysUserRole;
 */
 public interface SysUserRoleService extends IService<SysUserRole> {
 
+    /**
+     * 判断角色是否存在绑定用户
+     * @param roleId
+     * @return
+     */
+    boolean hasAssignedUser(Long roleId);
 }
