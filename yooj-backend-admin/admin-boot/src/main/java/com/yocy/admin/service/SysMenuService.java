@@ -2,6 +2,13 @@ package com.yocy.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.yocy.admin.model.entity.SysMenu;
+import com.yocy.admin.model.form.MenuForm;
+import com.yocy.admin.model.query.MenuQuery;
+import com.yocy.admin.model.vo.MenuVO;
+import com.yocy.admin.model.vo.RouteVO;
+import com.yocy.common.web.model.Option;
+
+import java.util.List;
 
 /**
 * @author 25055
@@ -10,4 +17,51 @@ import com.yocy.admin.model.entity.SysMenu;
 */
 public interface SysMenuService extends IService<SysMenu> {
 
+    /**
+     * 获取菜单列表
+     * @param queryParam
+     * @return
+     */
+    List<MenuVO> listMenus(MenuQuery queryParam);
+
+    /**
+     * 获取菜单下拉列表
+     * @return
+     */
+    List<Option> listMenuOptions();
+
+    /**
+     * 新增菜单
+     * @param menuForm
+     * @return
+     */
+    boolean saveMenu(MenuForm menuForm);
+
+    /**
+     * 获取路由列表
+     * @return
+     */
+    List<RouteVO> listRoutes();
+
+    /**
+     * 修改菜单显示状态
+     * @param menuId 菜单ID
+     * @param visible 是否显示（1->显示；0->隐藏）
+     * @return
+     */
+    boolean updateMenuVisable(Long menuId, Integer visible);
+
+    /**
+     * 获取菜单表单数据
+     * @param id
+     * @return
+     */
+    MenuForm getMenuForm(Long id);
+
+    /**
+     * 删除菜单
+     * @param id
+     * @return
+     */
+    boolean deleteMenu(Long id);
 }

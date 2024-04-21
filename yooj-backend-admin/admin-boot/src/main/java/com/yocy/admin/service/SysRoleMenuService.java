@@ -10,4 +10,8 @@ import com.yocy.admin.model.entity.SysRoleMenu;
 */
 public interface SysRoleMenuService extends IService<SysRoleMenu> {
 
+    /**
+     * 刷新权限缓存(所有角色)
+     */
+    void refreshRolePermsCache();
 }
