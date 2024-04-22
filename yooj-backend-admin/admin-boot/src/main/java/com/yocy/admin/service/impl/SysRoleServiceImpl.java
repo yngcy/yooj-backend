@@ -183,7 +183,7 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole>
     }
 
     @Override
-    public Integer getMaxDataRangeScope(Set<String> roles) {
+    public Integer getMaxDataRangeDataScope(Set<String> roles) {
         Integer dataScope = this.baseMapper.getMaxDataRangeDataScope(roles);
         return dataScope;
     }

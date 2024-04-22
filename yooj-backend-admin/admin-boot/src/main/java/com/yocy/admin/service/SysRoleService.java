@@ -80,5 +80,5 @@ public interface SysRoleService extends IService<SysRole> {
      * @param roles 角色编码集合
      * @return 最大的范围数据权限
      */
-    Integer getMaxDataRangeScope(Set<String> roles);
+    Integer getMaxDataRangeDataScope(Set<String> roles);
 }

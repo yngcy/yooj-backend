@@ -17,7 +17,7 @@ public class SysUser extends BaseEntity {
      * 
      */
     @TableId(type = IdType.AUTO)
-    private Integer id;
+    private Long id;
 
     /**
      * 用户名
@@ -42,7 +42,7 @@ public class SysUser extends BaseEntity {
     /**
      * 部门ID
      */
-    private Integer deptId;
+    private Long deptId;
 
     /**
      * 用户头像

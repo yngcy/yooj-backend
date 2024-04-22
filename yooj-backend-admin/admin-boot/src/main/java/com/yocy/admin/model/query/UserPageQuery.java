@@ -1,5 +1,6 @@
 package com.yocy.admin.model.query;
 
+import com.yocy.common.base.BasePageQuery;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -9,7 +10,7 @@ import lombok.Data;
  */
 @Schema
 @Data
-public class UserPageQuery {
+public class UserPageQuery extends BasePageQuery {
 
     @Schema(description="关键字(用户名/昵称/手机号)")
     private String keywords;
