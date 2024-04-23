@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: yooj-auth
+  profiles:
+    active: dev
