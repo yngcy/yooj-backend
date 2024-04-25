@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+spring:
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848
+      config:
+        server-addr: http://localhost:8848
+        file-extension: yaml
+        shared-configs[0]:
+          data-id: yooj-backend-common.yaml
+          refresh: true

@@ -1,0 +1,2 @@
+com.yocy.common.sms.property.AliyunSmsProperties
+com.yocy.common.sms.service.impl.AliyunSmsService
