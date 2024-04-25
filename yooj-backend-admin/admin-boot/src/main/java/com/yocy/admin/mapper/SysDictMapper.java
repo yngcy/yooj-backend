@@ -2,7 +2,7 @@ package com.yocy.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yocy.admin.model.entity.SysDict;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 25055

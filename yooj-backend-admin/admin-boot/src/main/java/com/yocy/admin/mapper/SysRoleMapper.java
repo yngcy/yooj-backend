@@ -2,7 +2,7 @@ package com.yocy.admin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yocy.admin.model.entity.SysRole;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Set;
 

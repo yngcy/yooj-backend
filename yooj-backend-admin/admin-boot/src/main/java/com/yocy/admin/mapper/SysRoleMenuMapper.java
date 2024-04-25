@@ -3,7 +3,7 @@ package com.yocy.admin.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yocy.admin.model.bo.RolePermsBO;
 import com.yocy.admin.model.entity.SysRoleMenu;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 

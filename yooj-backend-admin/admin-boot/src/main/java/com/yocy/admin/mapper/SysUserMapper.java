@@ -10,7 +10,7 @@ import com.yocy.admin.model.entity.SysUser;
 import com.yocy.admin.model.query.UserPageQuery;
 import com.yocy.admin.model.vo.UserExportVO;
 import com.yocy.common.mybatis.annotation.DataPermission;
-import org.mapstruct.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 

@@ -15,7 +15,7 @@
     <!-- 权限和拥有权限的角色集合Map -->
     <resultMap id="PremRolesMap" type="com.yocy.admin.model.bo.RolePermsBO">
         <result property="roleCode" column="role_code"/>
-        <collection property="perms" ofType="string" jdbcType="java.util.Set">
+        <collection property="perms" ofType="string" javaType="java.util.Set">
             <result column="perm"/>
         </collection>
     </resultMap>
@@ -25,7 +25,7 @@
             t2.`code` role_code,
             t3.perm
         FROM
-            `system_role_menu` t1
+            `sys_role_menu` t1
             INNER JOIN `sys_role` t2 ON t1.role_id = t2.id AND t2.deleted = 0 AND t2.`status` = 1
             INNER JOIN `sys_menu` t3 ON t1.menu_id = t3.id
         WHERE
