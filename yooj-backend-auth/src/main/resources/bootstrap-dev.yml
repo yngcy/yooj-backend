@@ -8,9 +8,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: http://localhsot:8848
+        server-addr: http://localhost:8848
       config:
-        server-addr: http://localhsot:8848
+        server-addr: http://localhost:8848
         file-extension: yaml
         shared-configs[0]:
           data-id: yooj-backend-common.yaml

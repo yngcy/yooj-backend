@@ -6,6 +6,8 @@ import com.yocy.common.enums.StatusEnum;
 import com.yocy.common.result.Result;
 import com.yocy.common.result.ResultCode;
 import com.yocy.oj.ums.api.MemberFeignClient;
+import com.yocy.oj.ums.dto.MemberAuthDTO;
+import com.yocy.oj.ums.dto.MemberRegisterDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AccountExpiredException;
 import org.springframework.security.authentication.DisabledException;
@@ -63,7 +65,7 @@ public class MemberDetailsService {
 
         // 会员不存在，注册成为新会员
         if (ResultCode.USER_NOT_EXIST.getCode().equals(getMemberAuthInfoResult.getCode())) {
-            MemberRegisterDto memberRegisterInfo = new MemberRegisterDto();
+            MemberRegisterDTO memberRegisterInfo = new MemberRegisterDTO();
             memberRegisterInfo.setOpenid(openid);
             memberRegisterInfo.setNickName("微信用户");
             // 注册会员

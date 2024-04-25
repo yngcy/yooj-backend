@@ -236,7 +236,7 @@ public class AuthorizationServerConfig {
         JdbcRegisteredClientRepository registeredClientRepository = new JdbcRegisteredClientRepository(jdbcTemplate);
 
         // 初始化 OAuth2 客户端
-        initMallAppClient(registeredClientRepository);
+        initOjAppClient(registeredClientRepository);
         initOjAdminClient(registeredClientRepository);
 
         return registeredClientRepository;
@@ -313,10 +313,10 @@ public class AuthorizationServerConfig {
          */
         String encodeSecret = passwordEncoder().encode(clientSecret);
 
-        RegisteredClient registeredMallAdminClient = registeredClientRepository.findByClientId(clientId);
-        String id = registeredMallAdminClient != null ? registeredMallAdminClient.getId() : UUID.randomUUID().toString();
+        RegisteredClient registeredOjAdminClient = registeredClientRepository.findByClientId(clientId);
+        String id = registeredOjAdminClient != null ? registeredOjAdminClient.getId() : UUID.randomUUID().toString();
 
-        RegisteredClient mallAppClient = RegisteredClient.withId(id)
+        RegisteredClient ojAppClient = RegisteredClient.withId(id)
                 .clientId(clientId)
                 .clientSecret(encodeSecret)
                 .clientName(clientName)
@@ -332,13 +332,13 @@ public class AuthorizationServerConfig {
                 .tokenSettings(TokenSettings.builder().accessTokenTimeToLive(Duration.ofDays(1)).build())
                 .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
                 .build();
-        registeredClientRepository.save(mallAppClient);
+        registeredClientRepository.save(ojAppClient);
     }
 
     /**
      * 初始化创建OJ APP客户端
      */
-    private void initMallAppClient(JdbcRegisteredClientRepository registeredClientRepository) {
+    private void initOjAppClient(JdbcRegisteredClientRepository registeredClientRepository) {
 
         String clientId = "oj-app";
         String clientSecret = "123456";
@@ -347,10 +347,10 @@ public class AuthorizationServerConfig {
         // 如果使用明文，在客户端认证的时候会自动升级加密方式，直接使用 bcrypt 加密避免不必要的麻烦
         String encodeSecret = passwordEncoder().encode(clientSecret);
 
-        RegisteredClient registeredMallAppClient = registeredClientRepository.findByClientId(clientId);
-        String id = registeredMallAppClient != null ? registeredMallAppClient.getId() : UUID.randomUUID().toString();
+        RegisteredClient registeredOjAppClient = registeredClientRepository.findByClientId(clientId);
+        String id = registeredOjAppClient != null ? registeredOjAppClient.getId() : UUID.randomUUID().toString();
 
-        RegisteredClient mallAppClient = RegisteredClient.withId(id)
+        RegisteredClient ojAppClient = RegisteredClient.withId(id)
                 .clientId(clientId)
                 .clientSecret(encodeSecret)
                 .clientName(clientName)
@@ -367,6 +367,6 @@ public class AuthorizationServerConfig {
                 .tokenSettings(TokenSettings.builder().accessTokenTimeToLive(Duration.ofDays(1)).build())
                 .clientSettings(ClientSettings.builder().requireAuthorizationConsent(true).build())
                 .build();
-        registeredClientRepository.save(mallAppClient);
+        registeredClientRepository.save(ojAppClient);
     }
 }

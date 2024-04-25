@@ -1,5 +1,5 @@
 spring:
   application:
-    name: yooj-auth
+    name: yooj-backend-auth
   profiles:
     active: dev

@@ -3,7 +3,7 @@ server:
 
 spring:
   main:
-    allow-circular-references: true
+    allow-bean-definition-overriding: true
   cloud:
     nacos:
       # 注册中心

@@ -1,6 +1,7 @@
 package com.yocy.auth.model;
 
 import com.yocy.common.constant.GlobalConstants;
+import com.yocy.oj.ums.dto.MemberAuthDTO;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
