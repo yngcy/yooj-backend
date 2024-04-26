@@ -64,7 +64,7 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole>
                         // 非超级管理员不显示超级管理员角色
                         .ne(SecurityUtils.isRoot(), SysRole::getCode, SystemConstants.ROOT_NODE_ID));
         // 实体转换
-        Page<RolePageVO> roleVOPage = roleConverter.entity2Page(rolePage);
+        Page<RolePageVO> roleVOPage = roleConverter.entityPage2VOPage(rolePage);
         return roleVOPage;
     }
 
