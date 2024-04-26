@@ -1,4 +1,0 @@
-com.yocy.common.security.service.PermissionService
-com.yocy.common.security.config.ResourceServerConfig
-com.yocy.common.security.exception.MyAccessDeinedHandler
-com.yocy.common.security.exception.MyAuthenticationEntryPoint

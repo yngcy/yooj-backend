@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: yocy-auth
+  profiles:
+    active: dev

@@ -5,9 +5,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yocy</groupId>
-    <artifactId>yooj</artifactId>
+    <artifactId>yooj-backend</artifactId>
     <version>0.0.1</version>
     <packaging>pom</packaging>
+    <modules>
+        <!-- 基础模块 -->
+        <module>yocy-common</module>
+        <module>yocy-gateway</module>
+        <module>yocy-admin</module>
+        <module>yocy-auth</module>
+
+        <!-- 业务模块 -->
+        <module>oj-ums</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -179,6 +189,71 @@
                 <version>${aliyun-sdk-oss.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-mybatis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-rabbitmq</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-apidoc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-security</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-sms</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>common-seata</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>admin-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yocy</groupId>
+                <artifactId>ums-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
