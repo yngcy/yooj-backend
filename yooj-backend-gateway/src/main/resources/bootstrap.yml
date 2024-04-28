@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: yooj-backend-gateway
-  profiles:
-    active: dev

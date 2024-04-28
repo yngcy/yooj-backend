@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: yooj-backend-auth
-  profiles:
-    active: dev
