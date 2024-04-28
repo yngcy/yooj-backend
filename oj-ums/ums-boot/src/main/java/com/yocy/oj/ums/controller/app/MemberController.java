@@ -18,10 +18,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * 会员APP控制器
  * @author <a href="https://github.com/yngcy">YounGCY</a>
  */
-@Tag(name = "APP-会员模块")
+@Tag(name = "APP-会员管理")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/app-api/v1/members")
