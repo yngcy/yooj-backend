@@ -12,6 +12,7 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpHeaders;
 
@@ -41,6 +42,7 @@ public class OpenApiConfig {
      * OpenAPI 配置
      * @return
      */
+    @Bean
     public OpenAPI apiInfo() {
         return new OpenAPI()
                 .components(new Components()
