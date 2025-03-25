@@ -47,7 +47,7 @@ public class JwtTokenCustomizerConfig {
                                 .collect(Collectors.collectingAndThen(Collectors.toSet(), Collections::unmodifiableSet));
                         claims.claim(JwtClaimConstants.AUTHORITIES, authorities);
 
-                    } else if (principal instanceof MemberDetails userDetails) { // 商城会员添加自定义字段
+                    } else if (principal instanceof MemberDetails userDetails) { // OJ会员添加自定义字段
                         claims.claim(JwtClaimConstants.MEMBER_ID, String.valueOf(userDetails.getId()));
                     }
                 });

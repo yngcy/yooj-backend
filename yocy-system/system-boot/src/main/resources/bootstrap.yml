@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: yocy-system
+  profiles:
+    active: dev

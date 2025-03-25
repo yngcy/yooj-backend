@@ -79,7 +79,7 @@ public class MyDataPermissionHandler implements DataPermissionHandler {
             case ALL -> {
                 return where;
             }
-            case DEPT_AND_SUB -> {
+            case DEPT -> {
                 deptId = SecurityUtils.getDeptId();
                 appendSqlStr = deptColumnName + StringPool.EQUALS + deptId;
             }

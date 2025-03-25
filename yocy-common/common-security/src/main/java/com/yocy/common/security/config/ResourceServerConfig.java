@@ -3,10 +3,10 @@ package com.yocy.common.security.config;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.json.JSONUtil;
 import com.yocy.common.constant.JwtClaimConstants;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -36,15 +36,13 @@ import java.util.List;
 @Configuration
 @ConfigurationProperties(prefix = "security")
 @EnableWebSecurity
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 @Slf4j
 public class ResourceServerConfig {
 
-    @Autowired
-    private AccessDeniedHandler accessDeniedHandler;
+    private final AccessDeniedHandler accessDeniedHandler;
 
-    @Autowired
-    private AuthenticationEntryPoint authenticationEntryPoint;
+    private final AuthenticationEntryPoint authenticationEntryPoint;
 
     /**
      * 白名单路径列表

@@ -1,8 +1,8 @@
 package com.yocy.auth.service;
 
 import cn.hutool.core.lang.Assert;
-import com.yocy.admin.api.UserFeignClient;
-import com.yocy.admin.dto.UserAuthInfo;
+import com.yocy.system.api.UserFeignClient;
+import com.yocy.system.dto.UserAuthInfo;
 import com.yocy.auth.model.SysUserDetails;
 import com.yocy.common.enums.StatusEnum;
 import lombok.RequiredArgsConstructor;

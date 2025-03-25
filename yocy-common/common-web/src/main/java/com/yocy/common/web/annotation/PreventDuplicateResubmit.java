@@ -1,9 +1,15 @@
 package com.yocy.common.web.annotation;
 
+import java.lang.annotation.*;
+
 /**
  * 防止重复提交注解
  * @author <a href="https://github.com/yngcy">YounGCY</a>
  */
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@Inherited
 public @interface PreventDuplicateResubmit {
 
     /**

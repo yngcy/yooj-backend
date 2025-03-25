@@ -12,7 +12,7 @@
         <!-- 基础模块 -->
         <module>yocy-common</module>
         <module>yocy-gateway</module>
-        <module>yocy-admin</module>
+        <module>yocy-system</module>
         <module>yocy-auth</module>
 
         <!-- 业务模块 -->
@@ -245,7 +245,7 @@
 
             <dependency>
                 <groupId>com.yocy</groupId>
-                <artifactId>admin-api</artifactId>
+                <artifactId>system-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

@@ -1,7 +1,7 @@
 package com.yocy.auth.model;
 
 import cn.hutool.core.collection.CollectionUtil;
-import com.yocy.admin.dto.UserAuthInfo;
+import com.yocy.system.dto.UserAuthInfo;
 import com.yocy.common.enums.StatusEnum;
 import lombok.Data;
 import org.springframework.security.core.CredentialsContainer;

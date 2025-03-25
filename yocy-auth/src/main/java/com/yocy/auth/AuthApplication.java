@@ -1,6 +1,6 @@
 package com.yocy.auth;
 
-import com.yocy.admin.api.UserFeignClient;
+import com.yocy.system.api.UserFeignClient;
 import com.yocy.oj.ums.api.MemberFeignClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

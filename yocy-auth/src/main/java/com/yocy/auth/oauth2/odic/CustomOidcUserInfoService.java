@@ -1,7 +1,7 @@
 package com.yocy.auth.oauth2.odic;
 
-import com.yocy.admin.api.UserFeignClient;
-import com.yocy.admin.dto.UserAuthInfo;
+import com.yocy.system.api.UserFeignClient;
+import com.yocy.system.dto.UserAuthInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

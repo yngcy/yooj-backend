@@ -1,0 +1,4 @@
+  com.yocy.common.web.config.WebMvcConfig
+  com.yocy.common.web.config.FeignConfig
+  com.yocy.common.web.exception.GlobalExceptionHandler
+  com.yocy.common.web.aspect.DuplicateSubmitAspect

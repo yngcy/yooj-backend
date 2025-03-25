@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: yocy-admin
-  profiles:
-    active: dev

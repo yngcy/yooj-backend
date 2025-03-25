@@ -1,6 +1,7 @@
 package com.yocy.auth.oauth2.handler;
 
-import com.alibaba.nacos.api.model.v2.Result;
+
+import com.yocy.common.result.Result;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

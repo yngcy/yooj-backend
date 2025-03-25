@@ -9,9 +9,11 @@ spring:
     nacos:
       discovery:
         server-addr: http://localhost:8848
+        namespace: 9190473c-72bf-4aa2-87e1-47f0d6dbe0f4
       config:
         server-addr: http://localhost:8848
         file-extension: yaml
         shared-configs[0]:
           data-id: yocy-common.yaml
           refresh: true
+        namespace: 9190473c-72bf-4aa2-87e1-47f0d6dbe0f4

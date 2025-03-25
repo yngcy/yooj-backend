@@ -5,17 +5,17 @@ import com.yocy.auth.service.AuthService;
 import com.yocy.common.result.Result;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 /**
  * 认证控制器
  * <br/>
- * 获取验证码、退出登录等接口
- * <br/>
- * 注：登录接口不在此控制器，在过滤器OAuth2TokenEndpointFilter拦截端点（/oath2/token）处理
+ * 获取验证码，注销等接口
  * @author <a href="https://github.com/yngcy">YounGCY</a>
  */
+@Tag(name = "认证接口")
 @RestController
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor

@@ -33,6 +33,7 @@ public class OpenApiConfig {
     @Value("${spring.security.oauth2.authorizationserver.token-uri}")
     private String tokenUrl;
 
+
     /**
      * API 文档信息属性
      */
@@ -73,6 +74,7 @@ public class OpenApiConfig {
                                 .url(apiDocInfoProperties.getContact().getUrl())
                                 .email(apiDocInfoProperties.getContact().getEmail()))
                         .license(new License().name(apiDocInfoProperties.getLicense().getName())
-                                .url(apiDocInfoProperties.getLicense().getUrl())));
+                                .url(apiDocInfoProperties.getLicense().getUrl()))
+                );
     }
 }
