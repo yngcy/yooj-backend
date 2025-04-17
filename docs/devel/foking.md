@@ -17,7 +17,7 @@ Github Forking 工作流详细步骤如下：
    $ git remote -v # Confirm that your remotes make sense
    origin https://github.com/examplefork/yooj-backend (fetch)
    origin https://github.com/examplefork/yooj-backend (push)
-   upstream     https://github.com/yngcg/yooj-backend (fetch)
+   upstream     https://github.com/yngcy/yooj-backend (fetch)
    upstream     https://github.com/yngcy/yooj-backend (push)
    ```
 3. 创建功能分支
